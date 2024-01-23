@@ -1,0 +1,28 @@
+###################################################
+# Install torch before any numpy version to ensure that the f***ing stupid DLL error does not appear
+###################################################
+name: bnn
+channels:
+  - defaults
+dependencies:
+  - pip
+  - pip:
+    - torch>1.8
+    - pytest
+    - pydantic
+    - pytest-cov
+    - pytest-mock
+    - hypothesis
+    - pre_commit==2.9.2
+    - emukit==0.4.8
+    - matplotlib
+    - gpytorch
+    - py_wake
+    - bcai-clustertools
+    - tueplots
+    - laplace-torch
+    - pylint
+    - flake8
+    - black
+    - mypy
+    - git+https://github.com/ltatzel/PyTorchHessianFree@main#egg=hessianfree

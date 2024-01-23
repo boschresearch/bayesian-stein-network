@@ -1,0 +1,32 @@
+memory: 10000
+duration: 1600
+dataset_name: ode_4
+mean_dim: 1
+device: cuda
+use_wind_model: false
+dataset_size:
+    list:
+        - 40960
+        - 81920
+        - 120000
+max_iter: 10000
+version:
+    list:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+transformation: const
+const:
+    list:
+        - max
+hidden_dim: 32
+act: celu
+num_layers: 2
+iter: 1000
+solver: pt_l_bfgs
+use_x_rescaling: true
+use_y_rescaling: true
+do_fit_laplace: true
+do_eval_uncertainty: true

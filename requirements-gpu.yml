@@ -1,0 +1,28 @@
+###################################################
+# Install torch before any numpy version to ensure that the f***ing stupid DLL error does not appear
+###################################################
+name: bnn-gpu
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - pip
+  - pytorch pytorch torchvision torchaudio cudatoolkit=11.3
+  - pip:
+    - pytest
+    - pydantic
+    - pytest-cov
+    - pytest-mock
+    - hypothesis
+    - pre_commit==2.9.2
+    - emukit
+    - matplotlib
+    - gpytorch
+    - py_wake
+    - bcai-clustertools
+    - tueplots
+    - laplace-torch
+    - pylint
+    - flake8
+    - black
+    - mypy

@@ -1,0 +1,28 @@
+memory: 20000
+duration: 350
+dataset_name: genz_continuous_integral
+pdf: gaussian
+dim: 20
+device: cuda
+use_wind_model: false
+dataset_size:
+    list:
+        - 20480
+        - 81920
+        - 327680
+        - 1319720
+max_iter: 20000
+version:
+    list:
+        - 0
+        - 1
+hidden_dim: 64
+act: celu
+num_layers: 2
+lengthscale: 1000.
+iter: 1000
+solver: pt_l_bfgs
+use_x_rescaling: true
+use_y_rescaling: true
+do_fit_laplace: true
+do_eval_uncertainty: true

@@ -1,0 +1,39 @@
+dataset_name: wind_farm_7d
+memory: 20000
+duration: 600
+pdf: combined_7d
+use_wind_model: false
+transformation: none
+device: cuda
+dataset_size:
+    list:
+        - 5
+        - 10
+        - 20
+        - 40
+        - 80
+        - 160
+        - 320
+        - 640
+        - 1280
+        - 2560
+        - 5120
+        - 10240
+        - 20480
+        - 40960
+version:
+    list:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+max_iter: 10000
+hidden_dim: 32
+act: celu
+num_layers: 2
+solver: pt_l_bfgs
+use_x_rescaling: true
+use_y_rescaling: true
+do_fit_laplace: true
+do_eval_uncertainty: true
